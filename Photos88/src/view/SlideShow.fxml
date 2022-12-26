@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SlideShowController">
+   <children>
+      <Label alignment="CENTER" layoutX="235.0" layoutY="21.0" prefHeight="17.0" prefWidth="131.0" text="Slide Show" />
+      <Button fx:id="goBackToAlbumButton" layoutX="226.0" layoutY="395.0" mnemonicParsing="false" onAction="#goBackToAlbum" prefHeight="26.0" prefWidth="150.0" text="Go back to Album" />
+      <ImageView fx:id="mainImage" fitHeight="322.0" fitWidth="485.0" layoutX="53.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:storage/france.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leftArrow" fitHeight="118.0" fitWidth="44.0" layoutX="4.0" layoutY="205.0" onMouseClicked="#moveLeft" pickOnBounds="true" preserveRatio="true">
+         <image>
+          	<Image url="file:storage/LeftArrow.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rightArrow" fitHeight="118.0" fitWidth="44.0" layoutX="542.0" layoutY="205.0" onMouseClicked="#moveRight" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="file:storage/LeftArrow.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

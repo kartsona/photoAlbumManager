@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.UserAlbumController">
+   <children>
+      <ListView fx:id="listview" layoutX="23.0" layoutY="50.0" prefHeight="274.0" prefWidth="554.0" />
+      <Label fx:id="albumHeader" alignment="CENTER" layoutX="235.0" layoutY="21.0" prefHeight="17.0" prefWidth="131.0" text="Albums" />
+      <Button fx:id="logOutButton" layoutX="445.0" layoutY="17.0" mnemonicParsing="false" onAction="#logOut" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: #DC143C; -fx-background-radius: 25; -fx-border-radius: 25;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="openAlbumButton" layoutX="23.0" layoutY="348.0" mnemonicParsing="false" onAction="#openAlbum" prefHeight="26.0" prefWidth="150.0" text="Open Album" />
+      <Button fx:id="renameAlbumButton" layoutX="226.0" layoutY="348.0" mnemonicParsing="false" onAction="#renameAlbum" prefHeight="26.0" prefWidth="150.0" text="Rename Album" />
+      <Button fx:id="deleteAlbumButton" layoutX="426.0" layoutY="348.0" mnemonicParsing="false" onAction="#deleteAlbum" prefHeight="26.0" prefWidth="150.0" text="Delete Album" />
+      <Button fx:id="createNewAlbumButton" layoutX="23.0" layoutY="396.0" mnemonicParsing="false" onAction="#createNewAlbum" prefHeight="26.0" prefWidth="150.0" text="Create New Album" />
+      <TextField fx:id="TextField" layoutX="221.0" layoutY="397.0" promptText="Enter Information" visible="false" />
+      <Button fx:id="saveButton" layoutX="426.0" layoutY="397.0" mnemonicParsing="false" onAction="#save" prefHeight="26.0" prefWidth="56.0" text="Save" visible="false" />
+      <Button fx:id="cancelButton" layoutX="501.0" layoutY="397.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" visible="false" />
+   </children>
+</AnchorPane>
